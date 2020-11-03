@@ -56,6 +56,7 @@ func Provider() *schema.Provider {
 		},
 		DataSourcesMap: map[string]*schema.Resource{
 			"wavefront_default_user_group": dataSourceDefaultUserGroup(),
+			"wavefront_alert_target":       dataSourceAlertTarget(),
 		},
 		ConfigureFunc: providerConfigure,
 	}
